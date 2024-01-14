@@ -13,13 +13,36 @@ const staticCmsVersion = "3.4.5";
 const lang = import.meta.env.WEBSITE_LANGUAGE;
 const url = Astro.site;
 
+
+// const config = {
+//   locale: lang,
+//   site_url: url,
+//   logo_url: "https://nebulix.unfolding.io/logo.svg",
+//   local_backend: true,
+//   backend: {
+//     name: "test-repo",
+//   },
+//   search: true,
+//   media_folder: "src/assets",
+//   public_folder: "/src/assets",
+//   media_library: {
+//     max_file_size: 2012000,
+//     folder_support: true,
+//   },
+//   collections: [page, post, project, product, menu, settings],
+// };
+
+
+
 const config = {
   locale: lang,
   site_url: url,
   logo_url: "https://nebulix.unfolding.io/logo.svg",
   local_backend: true,
   backend: {
-    name: "test-repo",
+    name: "github",
+    repo: "bluespacecreative/req",
+    branch: "main",
   },
   search: true,
   media_folder: "src/assets",

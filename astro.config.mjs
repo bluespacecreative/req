@@ -22,7 +22,7 @@ const m2dxOptions = {
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://req-web.netlify.app/",
+  site: "https://req-auto.netlify.app/",
   integrations: [
     icon(),
     mdx({}),
